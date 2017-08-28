@@ -369,6 +369,14 @@ template {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Sans:400,700|Roboto:100,300,400,700&subset=cyrillic");
+@font-face {
+  font-family: Helvetica light /* Имя шрифта */;
+  src: url("fonts/HelveticaLight.ttf") /* Путь к файлу со шрифтом */;
+}
+@font-face {
+  font-family: Helvetica medium /* Имя шрифта */;
+  src: url("fonts/HelveticaMedium.ttf") /* Путь к файлу со шрифтом */;
+}
 * {
   box-sizing: inherit;
 }
@@ -440,6 +448,15 @@ html {
   font-size: 20px;
   font-weight: 100;
   margin-bottom: 4px;
+  position: relative;
+}
+.header-menu .container .phone-block .phone:after {
+  width: 18px;
+  height: 24px;
+  left: 65px;
+  content: "";
+  background: url("../img/phone-icon.png");
+  position: absolute;
 }
 .header-menu .container .phone-block .phone-link {
   font-family: 'Roboto';
@@ -448,4 +465,53 @@ html {
   text-decoration: none;
   color: #fff;
   border-bottom: 1px dotted #fff;
+}
+.start-block {
+  padding-top: 200px;
+}
+.start-block h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Helvetica medium;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 72px;
+  margin-bottom: 60px;
+}
+.start-block .h1-shadow {
+  width: 616px;
+  height: 118px;
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 55px;
+}
+.start-block .h1-shadow h1 {
+  color: #fff;
+  font-family: Helvetica light;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 42px;
+}
+.start-block .h1-shadow h1 span {
+  font-family: Helvetica medium;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+.start-block .btn {
+  background: none;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-family: Helvetica light;
+  width: 327px;
+  height: 70px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 48px;
+  margin-left: 143px;
+  cursor: pointer;
+}
+.start-block .btn:hover {
+  background: rgba(0,0,0,0.5);
 }
