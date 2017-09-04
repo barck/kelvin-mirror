@@ -71,7 +71,7 @@ gulp.task('watch', function() {
     gulp.watch('app/style/*.styl', ['stylus']); // Наблюдение за styl файлами и выполнение задачи stylus
     gulp.watch('app/views/*.twig', ['compile']);
     gulp.watch('app/js/*.js', ['scripts']);  // Наблюдение за другими типами файлов
-    gulp.watch('app/img/', ['copy']);
+    gulp.watch('app/img/*', ['copy']);
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync

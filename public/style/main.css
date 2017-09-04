@@ -412,10 +412,14 @@ html {
   min-height: 680px;
   background: url("../img/hero_image_3.jpg") no-repeat center center;
   background-size: cover;
+  position: relative;
+  padding-top: 50px;
 }
 .block-3 img {
-  display: block;
-  margin: 0 auto;
+  top: 80px;
+}
+.block-3 div {
+  display: flex;
 }
 .header-menu .container {
   display: flex;
@@ -522,7 +526,7 @@ html {
 .start-block .btn:hover {
   background: rgba(0,0,0,0.5);
 }
-.block-2 .left {
+.block-2 .block-2-left {
   width: 455px;
   height: 320px;
   background: rgba(0,0,0,0.6);
@@ -531,7 +535,7 @@ html {
   margin-top: 50px;
   padding: 20px;
 }
-.block-2 .left h3 {
+.block-2 .block-2-left h3 {
   margin: 0;
   padding: 0;
   font-family: Roboto;
@@ -539,14 +543,14 @@ html {
   line-height: 34px;
   font-weight: 100;
 }
-.block-2 .left p {
+.block-2 .block-2-left p {
   font-family: Roboto;
   font-size: 17px;
   line-height: 26px;
   font-weight: 100;
-  color: rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.7);
 }
-.block-2 .right {
+.block-2 .block-2-right {
   width: 455px;
   height: 320px;
   background: rgba(0,0,0,0.5);
@@ -555,7 +559,7 @@ html {
   margin-top: 380px;
   padding: 20px;
 }
-.block-2 .right h3 {
+.block-2 .block-2-right h3 {
   margin: 0;
   padding: 0;
   font-family: Roboto;
@@ -563,10 +567,73 @@ html {
   line-height: 34px;
   font-weight: 100;
 }
-.block-2 .right p {
+.block-2 .block-2-right p {
   font-family: Roboto;
   font-size: 17px;
   line-height: 26px;
   font-weight: 100;
   color: rgba(255,255,255,0.7);
+}
+.block-3 .block-3-left {
+  min-height: 570px;
+  width: 350px;
+  padding-right: 50px;
+  display: block;
+}
+.block-3 .block-3-left .item {
+  display: block;
+  text-align: right;
+  position: relative;
+}
+.block-3 .block-3-left .item img {
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+.block-3 .block-3-left .item .lamp {
+  right: -40px;
+}
+.block-3 .block-3-right {
+  min-height: 570px;
+  width: 350px;
+  padding-left: 50px;
+  display: block;
+}
+.block-3 .block-3-right .item {
+  display: block;
+  text-align: left;
+  position: relative;
+}
+.block-3 .block-3-right .item img {
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+.block-3 span {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: PT Sans;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 800;
+}
+.block-3 p {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+  font-family: PT Sans;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+}
+.block-4 .headline h2 {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 58px;
+  line-height: 79px;
+  font-weight: 100;
+  text-align: center;
 }
