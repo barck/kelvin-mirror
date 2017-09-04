@@ -49,7 +49,23 @@ html
 	div
 		display flex
 
-
+.block-4
+	.mirror-1
+		min-height 700px
+		background url("../img/mirror1.jpg") no-repeat center center
+		background-size cover
+	.mirror-2
+		min-height 700px
+		background url("../img/mirror2.jpg") no-repeat center center
+		background-size cover
+	.mirror-3
+		min-height 700px
+		background url("../img/mirror3.jpg") no-repeat center center
+		background-size cover
+	.mirror-4
+		min-height 700px
+		background url("../img/mirror4.jpg") no-repeat center center
+		background-size cover
 
 //ОФОРМЛЕНИЕ_________________
 
@@ -128,22 +144,24 @@ html
 				font-weight 700
 				text-decoration line-through
 	
-	.btn
-		background none
-		outline none
-		border 2px solid #fff		
-		border-radius 10px
-		font-family Helvetica light
-		width 327px
-		height 70px
-		color #fff
-		font-size 40px;
-		font-weight 100
-		line-height 48px
-		margin-left 143px
-		cursor pointer
-		&:hover
-			background rgba(0, 0, 0, 0.5)
+.btn
+	background none
+	outline none
+	border 2px solid #fff
+	border-radius 10px
+	font-family Helvetica light
+	width 327px
+	height 70px
+	color #fff
+	font-size 40px
+	font-weight 100
+	line-height 48px
+	cursor pointer
+	&:hover
+		background rgba(0, 0, 0, 0.5)
+
+.btn-hero
+	margin-left 143px
 				
 .block-2
 	.block-2-left
@@ -245,14 +263,85 @@ html
 	.headline h2
 		margin 0
 		padding 0
+		margin-bottom: 5px
 		font-family Open Sans
 		font-size 58px
 		line-height 79px
 		font-weight 100
-		text-align: center
+		text-align center
+
+.mirror-1 div, .mirror-3 div
+	display flex
+	justify-content flex-end
+.mirror-2 div, .mirror-4 div
+	display flex
+	justify-content flex-start
+
+.block-4 .mirror-desc
+	display block
+	margin-top 145px
+	width 375px
+	min-height 420px
+	.spec
+		display block
+		width 375px
+		min-height 310px
+		background #fff
+		margin-bottom 36px
+		padding: 20px
+		position: relative
+		h2
+			display: inline-block
+			font-family Roboto
+			font-size 38px
+			line-height 44px
+			font-weight 100
+			text-align: left
+		h2.upper
+			font-weight 700
+			margin-bottom: 5px
+		h3
+			margin: 0
+			padding: 0
+			font-family Roboto
+			font-size 20px
+			line-height 24px
+			font-weight 100
+			text-align: left
+		hr
+			width: 230px
+			position: absolute
+		ul
+			margin: 0
+			padding: 0
+			padding-left: 20px
+			margin-top: 20px
+			margin-bottom: 15px
+			li
+				margin: 0
+				padding: 0
+				font-family Open Sans
+				font-size 18px
+				line-height 24px
+				font-weight 100
+		.old-price
+			margin-bottom: 15px
+			font-family Helvetica Neue
+			font-size 36px
+			line-height 43px
+			font-weight 400
+			text-decoration line-through
+		.new-price
+			font-family Helvetica Neue
+			font-size 32px
+			line-height 43px
+			font-weight 100
 
 
-
+	button
+		margin-left: 24px
+		&:hover
+			background rgba(255, 255, 255, 0.5)
 
 
 

@@ -421,6 +421,26 @@ html {
 .block-3 div {
   display: flex;
 }
+.block-4 .mirror-1 {
+  min-height: 700px;
+  background: url("../img/mirror1.jpg") no-repeat center center;
+  background-size: cover;
+}
+.block-4 .mirror-2 {
+  min-height: 700px;
+  background: url("../img/mirror2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.block-4 .mirror-3 {
+  min-height: 700px;
+  background: url("../img/mirror3.jpg") no-repeat center center;
+  background-size: cover;
+}
+.block-4 .mirror-4 {
+  min-height: 700px;
+  background: url("../img/mirror4.jpg") no-repeat center center;
+  background-size: cover;
+}
 .header-menu .container {
   display: flex;
   justify-content: space-between;
@@ -508,7 +528,7 @@ html {
   font-weight: 700;
   text-decoration: line-through;
 }
-.start-block .btn {
+.btn {
   background: none;
   outline: none;
   border: 2px solid #fff;
@@ -520,11 +540,13 @@ html {
   font-size: 40px;
   font-weight: 100;
   line-height: 48px;
-  margin-left: 143px;
   cursor: pointer;
 }
-.start-block .btn:hover {
+.btn:hover {
   background: rgba(0,0,0,0.5);
+}
+.btn-hero {
+  margin-left: 143px;
 }
 .block-2 .block-2-left {
   width: 455px;
@@ -631,9 +653,95 @@ html {
 .block-4 .headline h2 {
   margin: 0;
   padding: 0;
+  margin-bottom: 5px;
   font-family: Open Sans;
   font-size: 58px;
   line-height: 79px;
   font-weight: 100;
   text-align: center;
+}
+.mirror-1 div,
+.mirror-3 div {
+  display: flex;
+  justify-content: flex-end;
+}
+.mirror-2 div,
+.mirror-4 div {
+  display: flex;
+  justify-content: flex-start;
+}
+.block-4 .mirror-desc {
+  display: block;
+  margin-top: 145px;
+  width: 375px;
+  min-height: 420px;
+}
+.block-4 .mirror-desc .spec {
+  display: block;
+  width: 375px;
+  min-height: 310px;
+  background: #fff;
+  margin-bottom: 36px;
+  padding: 20px;
+  position: relative;
+}
+.block-4 .mirror-desc .spec h2 {
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 100;
+  text-align: left;
+}
+.block-4 .mirror-desc .spec h2.upper {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.block-4 .mirror-desc .spec h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 100;
+  text-align: left;
+}
+.block-4 .mirror-desc .spec hr {
+  width: 230px;
+  position: absolute;
+}
+.block-4 .mirror-desc .spec ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.block-4 .mirror-desc .spec ul li {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 100;
+}
+.block-4 .mirror-desc .spec .old-price {
+  margin-bottom: 15px;
+  font-family: Helvetica Neue;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+.block-4 .mirror-desc .spec .new-price {
+  font-family: Helvetica Neue;
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: 100;
+}
+.block-4 .mirror-desc button {
+  margin-left: 24px;
+}
+.block-4 .mirror-desc button:hover {
+  background: rgba(255,255,255,0.5);
 }
