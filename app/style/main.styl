@@ -1,11 +1,11 @@
-@import url('https//fonts.googleapis.com/css?family=Open+Sans300,400,700|PT+Sans400,700|Roboto100,300,400,700&subset=cyrillic')
-@font-face
-    font-family Helvetica light  /* Имя шрифта */
-    src url(fonts/HelveticaLight.ttf) /* Путь к файлу со шрифтом */
-@font-face
-    font-family Helvetica medium  /* Имя шрифта */
-    src url(fonts/HelveticaMedium.ttf) /* Путь к файлу со шрифтом */    
-
+@font-face {
+    font-family: HelveticaNeue; /* Гарнитура шрифта */
+    src: url(fonts/HelveticaNeue.ttf); /* Для остальных браузеров */
+   }
+@font-face {
+    font-family: HelveticaNeueThin; /* Гарнитура шрифта */
+    src: url(fonts/HelveticaNeue-Thin.ttf); /* Для остальных браузеров */
+   }
 
 
 *
@@ -14,7 +14,7 @@
 html
 	box-sizing border-box
 	background #fff 
-	font 16px PTSans, sans-serif
+	font 16px PT Sans, sans-serif
 	
 .container
 	width 960px
@@ -27,8 +27,11 @@ html
 
 .header-menu
 	min-height 70px
-	background #2D2D2D
+	background #151515
 	color #fff
+	position fixed
+	width 100%
+	z-index 10
 	img
 		margin-top 5px
 
@@ -111,7 +114,7 @@ html
 
 .final-cta
 	min-height 120px
-	background #000
+	background #151515
 
 //ОФОРМЛЕНИЕ_________________
 
@@ -129,7 +132,7 @@ html
 			a
 				display block
 				text-decoration none
-				font-family 'Tahoma', sans-serif
+				font-family Tahoma, sans-serif
 				margin 0
 				padding 23px 23px
 				font-size 18px
@@ -143,7 +146,7 @@ html
 		text-align right
 		padding-top 12px
 		.phone
-			font-family 'Roboto', sans-serif
+			font-family Roboto, sans-serif
 			font-size 20px
 			font-weight 100
 			margin-bottom 4px
@@ -156,7 +159,7 @@ html
 				background url("../img/phone-icon.png")
 				position absolute
 		.phone-link
-			font-family 'Roboto'
+			font-family Roboto
 			font-size 14px
 			font-weight 100
 			text-decoration none
@@ -169,7 +172,7 @@ html
 		margin 0
 		padding 0
 		color #fff
-		font-family Helvetica medium
+		font-family HelveticaNeue 
 		font-size 47px
 		font-weight 400
 		line-height 72px
@@ -181,12 +184,12 @@ html
 		margin-bottom 55px
 		h1
 			color #fff
-			font-family Helvetica light
+			font-family Roboto
 			font-size 32px
 			font-weight 100
 			line-height 42px
 			span
-				font-family Helvetica medium
+				font-family HelveticaNeue 
 				font-weight 700
 				text-decoration line-through
 	
@@ -195,12 +198,12 @@ html
 	outline none
 	border 2px solid #fff
 	border-radius 10px
-	font-family Helvetica light
+	font-family Open Sans
 	width 327px
 	height 70px
 	color #fff
 	font-size 40px
-	font-weight 100
+	font-weight 300
 	line-height 48px
 	cursor pointer
 	&:hover
@@ -372,13 +375,12 @@ html
 				font-weight 100
 		.old-price
 			margin-bottom 15px
-			font-family Helvetica Neue
 			font-size 36px
 			line-height 43px
 			font-weight 400
 			text-decoration line-through
 		.new-price
-			font-family Helvetica Neue
+			font-family HelveticaNeueThin 
 			font-size 32px
 			line-height 43px
 			font-weight 100
@@ -409,7 +411,7 @@ html
 		h3
 			margin 0
 			padding 0
-			font-family "Helvetica Neue"
+			font-family HelveticaNeue 
 			font-size 24px
 			line-height 28px
 			font-weight 100
@@ -425,7 +427,7 @@ html
 	span.other-desc
 		margin 0
 		padding 0
-		font-family Helvetica Neue
+		font-family Open Sans 
 		font-size 26px
 		line-height 36px
 		font-weight 100
@@ -433,7 +435,8 @@ html
 
 	button
 		font-size 32px
-		font-family Helvetica Neue
+		font-family Open Sans
+		font-weight 300
 		display block
 		margin-top 35px
 		&:hover
@@ -458,7 +461,7 @@ html
 			padding 0
 			padding-left 10px
 			padding-top 5px
-			font-family "Open Sans"
+			font-family Open Sans
 			font-size 20px
 			line-height 27px
 			font-weight 100
@@ -469,7 +472,7 @@ html
 	h2
 		margin 0
 		padding 0
-		font-family "Open Sans"
+		font-family Open Sans
 		font-size 58px
 		line-height 79px
 		font-weight 100
@@ -487,7 +490,7 @@ html
 		p
 			margin 0
 			padding 0
-			font-family "Open Sans"
+			font-family Open Sans
 			font-size 24px
 			line-height 33px
 			font-weight 100
@@ -498,7 +501,7 @@ html
 	h2
 		margin 0
 		padding 0
-		font-family "Open Sans"
+		font-family Open Sans
 		font-size 58px
 		line-height 79px
 		font-weight 100
@@ -512,7 +515,7 @@ html
 	h3
 		margin 0
 		padding 0
-		font-family "Open Sans"
+		font-family Open Sans
 		font-size 24px
 		line-height 33px
 		font-weight 100
@@ -522,7 +525,7 @@ html
 	p
 		margin 0
 		padding 0
-		font-family "Open Sans"
+		font-family Open Sans
 		font-size 18px
 		line-height 24px
 		font-weight 100
@@ -536,7 +539,7 @@ html
 	h2
 		margin 0
 		padding 0
-		font-family "Open Sans"
+		font-family Open Sans
 		font-size 58px
 		line-height 79px
 		font-weight 100
@@ -556,13 +559,17 @@ html
 		bottom 20px
 		left 100px
 		font-size 24px
+		font-weight 100
+		border 1px solid #fff
 		line-height 28px
 		width 250px
 		height 55px
 		background rgba(0, 0, 0, 0.7)
-		font-family Helvetica Neue
+		font-family Open Sans
 		&:hover
 			background rgba(255, 255, 255, 0.5)
+			color #000
+			border-color #000
 
 .block-10
 	padding-top 70px
@@ -573,7 +580,7 @@ html
 		width 375px
 		height 260px
 		background #fff
-		padding-top 25px
+		padding-top 10px
 	.title
 		display block
 		margin 0
@@ -584,18 +591,18 @@ html
 		font-weight 100
 		color #000
 		text-align center
-		margin-bottom 13px
+		margin-bottom 20px
 	.number
 		display block
 		margin 0
 		padding 0
 		font-family PT Sans
-		font-size 96px
+		font-size 160px
 		line-height 112px
 		font-weight 700
 		color #000
 		text-align center
-		margin-bottom 13px
+		margin-bottom 35px
 	.subject
 		display block
 		margin 0
@@ -617,7 +624,7 @@ html
 	h2
 		margin 0
 		padding 0
-		font-family "Open Sans"
+		font-family Open Sans
 		font-size 58px
 		line-height 79px
 		font-weight 100
@@ -627,7 +634,7 @@ html
 	h3
 		margin 0
 		padding 0
-		font-family "Open Sans"
+		font-family Open Sans
 		font-size 36px
 		line-height 49px
 		font-weight 100
@@ -643,7 +650,7 @@ html
 		border 2px solid #000
 		border-radius 10px
 		outline none
-		font-family "Open Sans"
+		font-family Open Sans
 		font-weight 100
 		text-align center
 
