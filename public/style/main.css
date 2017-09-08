@@ -368,7 +368,7 @@ template {
   display: none;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Sans:400,700|Roboto:100,300,400,700&subset=cyrillic");
+@import url("https//fonts.googleapis.com/css?family=Open+Sans300,400,700|PT+Sans400,700|Roboto100,300,400,700&subset=cyrillic");
 @font-face {
   font-family: Helvetica light /* Имя шрифта */;
   src: url("fonts/HelveticaLight.ttf") /* Путь к файлу со шрифтом */;
@@ -469,7 +469,7 @@ html {
   background-size: cover;
 }
 .block-9 {
-  min-height: 830px;
+  min-height: 770px;
   background: url("../img/hero_image_9.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -477,6 +477,15 @@ html {
   min-height: 400px;
   background: url("../img/hero_image_10.jpg") no-repeat center center;
   background-size: cover;
+}
+.block-11 {
+  min-height: 655px;
+  background: url("../img/hero_image_11.jpg") no-repeat center center;
+  background-size: cover;
+}
+.final-cta {
+  min-height: 120px;
+  background: #000;
 }
 .header-menu .container {
   display: flex;
@@ -518,7 +527,7 @@ html {
   margin-bottom: 4px;
   position: relative;
 }
-.header-menu .container .phone-block .phone:after {
+.header-menu .container .phone-block .phoneafter {
   width: 18px;
   height: 24px;
   left: 65px;
@@ -834,6 +843,9 @@ html {
   display: block;
   margin-top: 35px;
 }
+.block-5 button:hover {
+  background: rgba(255,255,255,0.5);
+}
 .block-6 .container {
   border-top: 1px solid transparent;
 }
@@ -934,4 +946,123 @@ html {
   color: rgba(255,255,255,0.7);
   text-align: left;
   margin-bottom: 25px;
+}
+.block-9 {
+  padding-bottom: 1px;
+}
+.block-9 h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 58px;
+  line-height: 79px;
+  font-weight: 100;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.block-9 .reviews {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.block-9 .reviews-item {
+  width: 455px;
+  height: 300px;
+  position: relative;
+}
+.block-9 button {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  font-size: 24px;
+  line-height: 28px;
+  width: 250px;
+  height: 55px;
+  background: rgba(0,0,0,0.7);
+  font-family: Helvetica Neue;
+}
+.block-9 button:hover {
+  background: rgba(255,255,255,0.5);
+}
+.block-10 {
+  padding-top: 70px;
+}
+.block-10 .container {
+  display: flex;
+  justify-content: space-between;
+}
+.block-10 .numbers {
+  width: 375px;
+  height: 260px;
+  background: #fff;
+  padding-top: 25px;
+}
+.block-10 .title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 100;
+  color: #000;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.block-10 .number {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+  font-size: 96px;
+  line-height: 112px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.block-10 .subject {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 270px;
+  margin: 0 auto;
+  font-family: PT Sans;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.block-11 {
+  padding-bottom: 1px;
+}
+.block-11 h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 58px;
+  line-height: 79px;
+  font-weight: 100;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.block-11 h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  font-size: 36px;
+  line-height: 49px;
+  font-weight: 100;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.final-cta .container {
+  display: flex;
+  justify-content: space-between;
 }
