@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
+    $("#scroll").on("click","a", "button", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 
@@ -11,5 +11,23 @@ $(document).ready(function(){
 
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+
+//прячем стрелку в первом блоке по клику
+// var arrowLink = document.querySelector('.arrow')
+// arrowLink.addEventListener("click", function(event){
+//
+//     function Hide () {
+//         arrowLink.classList.add("hidden");
+//     }
+//     setTimeout(Hide, 1500);
+//
+// });
+
+$( "#arrow" ).click(function() {
+    $( "#arrow" ).fadeOut( 1500, function() {
+        // Анимация завершена.
     });
 });

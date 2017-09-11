@@ -8,10 +8,10 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
 </head>
-<body>
+<body id="scroll">
 
     <header id="index">
-        <div class="header-menu" id="menu">
+        <div class="header-menu" >
             <div class="container">
                 <a href="#index"><img src="img/logo.png" alt=""></a>
                 <ul>
@@ -42,10 +42,11 @@
                 </h1>
             </div>
             <button class="btn btn-hero">Купить</button>
+            <a href="#block2" class="arrow" id="arrow"></a>
         </div>
     </div>
 
-    <div  class="block-2">
+    <div  class="block-2" id="block2">
         <div class="container">
             <div class="block-2-left">
                 <h3>
@@ -223,7 +224,7 @@
             </div>
             <h2 class="other">Нужно зеркало другого цвета или размера?</h2>
             <span class="other-desc">Мы делаем любые зеркала на заказ. Звоните +7 (963) 075-99-60  либо оставляйте заявку и мы вам перезвоним.</span>
-            <button class="btn">Перезвоните мне</button>
+            <a class="btn btn-to-a" href="#cta">Перезвоните мне</a>
         </div>
     </div>
 
@@ -268,6 +269,7 @@
                     <p>Мы доставляем вам зеркало, вы проверяете его и производите оплату.</p>
                 </div>
             </div>
+            <button class="btn">Заказать сейчас</button>
         </div>
     </div>
 
@@ -316,21 +318,21 @@
             <div class="reviews">
                 <div class="reviews-item">
                     <img src="img/rew1.jpg" alt="">
-                    <button class="btn">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
                 </div>
                 <div class="reviews-item">
                     <img src="img/rew2.jpg" alt="">
-                    <button class="btn">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
                 </div>
             </div>
             <div class="reviews">
                 <div class="reviews-item">
                     <img src="img/rew3.jpg" alt="">
-                    <button class="btn">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
                 </div>
                 <div class="reviews-item">
                     <img src="img/rew4.jpg" alt="">
-                    <button class="btn">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
                 </div>
             </div>
         </div>
@@ -351,22 +353,27 @@
         </div>
     </div>
 
-    <div class="block-11">
+    <div class="block-11" id="cta">
         <div class="container">
             <h2>Остались вопросы?</h2>
             <h3>Задайте их нашему мастеру, он перезвонит вам в течение 15 минут!</h3>
             <form action="#" class="call">
-                <input type="text">
+                <input type="tel" id="phone" placeholder="Введите номер">
                 <button class="btn">Перезвоните мне</button>
             </form>
         </div>
     </div>
 
-    <footer class="final-cta">
+    <footer class="main-footer">
         <div class="container">
-            <a href="#"><img src="img/logo.png" alt=""></a>
+            <a class="footer-logo" href="#"><img src="img/logo.png" alt=""></a>
+            <div class="company">ЗАО "Техпромстрой"<br>
+                ИНН: 614705555474 <br>
+                ОГРН: 314619115500032 <br>
+                +7 (963) 075-99-60</div>
             <div class="social-btns">
-                social
+                <a href="#" class="social-btn vk"></a>
+                <a href="#" class="social-btn insta"></a>
             </div>
         </div>
     </footer>

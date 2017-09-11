@@ -108,12 +108,12 @@ html
 	background-size cover
 
 .block-11
-	min-height 655px
+	min-height 470px
 	background url("../img/hero_image_11.jpg") no-repeat center center
 	background-size cover
 
-.final-cta
-	min-height 120px
+.main-footer
+	min-height 88px
 	background #151515
 
 //ОФОРМЛЕНИЕ_________________
@@ -151,7 +151,7 @@ html
 			font-weight 100
 			margin-bottom 4px
 			position relative
-			&after
+			&:after
 				width 18px
 				height 24px
 				left 65px
@@ -165,9 +165,12 @@ html
 			text-decoration none
 			color #fff
 			border-bottom 1px dotted #fff
+			&:hover
+				border none
 
 .start-block
 	padding-top 200px
+	position: relative
 	h2
 		margin 0
 		padding 0
@@ -178,8 +181,8 @@ html
 		line-height 72px
 		margin-bottom 60px
 	.h1-shadow
-		width 616px
-		height 118px
+		width 597px
+		height 125px
 		background-color rgba(0, 0, 0, 0.5)
 		margin-bottom 55px
 		h1
@@ -211,7 +214,21 @@ html
 
 .btn-hero
 	margin-left 143px
-				
+	
+.arrow
+	width 108px
+	height 94px
+	display block
+	background url("../img/arrow.png")
+	opacity 0.8
+	left 600px
+	bottom -37px
+	position absolute
+	&:hover
+		opacity 1
+.hidden
+	display: none
+
 .block-2
 	.block-2-left
 		width 455px
@@ -433,14 +450,21 @@ html
 		font-weight 100
 		color #fff
 
-	button
+	.btn-to-a
+		display: inline-block
 		font-size 32px
 		font-family Open Sans
 		font-weight 300
+		margin: 0
+		padding: 10px
+		height: auto
 		display block
+		text-align: center
 		margin-top 35px
+		text-decoration: none
 		&:hover
 			background rgba(255, 255, 255, 0.5)
+			
 
 .block-6
 	.container
@@ -469,6 +493,7 @@ html
 
 .block-7
 	padding-top 20px
+	text-align center
 	h2
 		margin 0
 		padding 0
@@ -496,6 +521,14 @@ html
 			font-weight 100
 			color #000
 			text-align left
+			margin-bottom: 20px
+	.btn
+		color #000
+		border-color #000
+		font-family Open Sans
+		margin-bottom 30px
+		&:hover
+			background rgba(0, 0, 0, 0.15)
 
 .block-8
 	h2
@@ -621,6 +654,7 @@ html
 
 .block-11
 	padding-bottom 1px
+	text-align center
 	h2
 		margin 0
 		padding 0
@@ -643,20 +677,58 @@ html
 		margin-bottom 40px
 	.call input
 		margin: 0
-		padding 0
+		padding 5px
 		display: block
 		margin: 0 auto
-		font-size 42px
-		border 2px solid #000
+		margin-bottom: 40px
+		font-size 64px
+		border 1px solid #000
 		border-radius 10px
 		outline none
-		font-family Open Sans
+		font-family HelveticaNeueThin
 		font-weight 100
 		text-align center
+		background rgba(255, 255, 255, 0.7)
+	.btn
+		color #000
+		border-color #000
+		font-family Open Sans
+		margin-bottom 30px
+		width auto
+		&:hover
+			background rgba(0, 0, 0, 0.15)
 
 
-.final-cta
+.main-footer
 	.container
 		display flex
 		justify-content space-between
-
+	.footer-logo
+		margin-top: 12px
+	.company
+		width: 293px
+		margin 0
+		padding 0
+		font-family HelveticaNeueThin
+		font-size 16px
+		line-height 22px
+		font-weight 100
+		text-align center
+		color #fff
+	.social-btn
+		display inline-block
+		width 43px
+		height 43px
+		margin 0 5px
+		margin-top: 22px
+		background #000000 url(../img/social_sprite.png) no-repeat center
+		font-size 0
+		vertical-align top
+		transition filter 0.5s
+		filter invert(100%)
+		&:hover
+			filter none
+	.vk
+		background-position: 3px -118px
+	.insta
+		background-position: 7px -59px
