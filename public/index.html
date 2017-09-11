@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Kelvin Mirror</title>
+    <meta name="format-detection" content="telephone=no">
+    <title>Kelvin Mirror</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|PT+Sans:400,700|Roboto:100,300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="style/main.css">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -21,7 +22,7 @@
                 </ul>
                 <div class="phone-block">
                     <div class="phone">+7 (963) 075-99-60</div>
-                    <a class="phone-link" href="#">Заказать обратный звонок</a>
+                    <a class="phone-link" href="#cta">Заказать обратный звонок</a>
                 </div>
             </div>
         </div>
@@ -318,21 +319,21 @@
             <div class="reviews">
                 <div class="reviews-item">
                     <img src="img/rew1.jpg" alt="">
-                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.open('http://vk.com')">Посмотреть отзыв</button>
                 </div>
                 <div class="reviews-item">
                     <img src="img/rew2.jpg" alt="">
-                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.open('http://vk.com')">Посмотреть отзыв</button>
                 </div>
             </div>
             <div class="reviews">
                 <div class="reviews-item">
                     <img src="img/rew3.jpg" alt="">
-                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.open('http://vk.com')">Посмотреть отзыв</button>
                 </div>
                 <div class="reviews-item">
                     <img src="img/rew4.jpg" alt="">
-                    <button class="btn" onclick="window.location.href='https://vk.com'">Посмотреть отзыв</button>
+                    <button class="btn" onclick="window.open('http://vk.com')">Посмотреть отзыв</button>
                 </div>
             </div>
         </div>
@@ -357,9 +358,9 @@
         <div class="container">
             <h2>Остались вопросы?</h2>
             <h3>Задайте их нашему мастеру, он перезвонит вам в течение 15 минут!</h3>
-            <form action="#" class="call">
+            <form action="#" method="post" class="call">
                 <input type="tel" id="phone" placeholder="Введите номер">
-                <button class="btn">Перезвоните мне</button>
+                <button class="btn" type="submit">Перезвоните мне</button>
             </form>
         </div>
     </div>
@@ -372,8 +373,8 @@
                 ОГРН: 314619115500032 <br>
                 +7 (963) 075-99-60</div>
             <div class="social-btns">
-                <a href="#" class="social-btn vk"></a>
-                <a href="#" class="social-btn insta"></a>
+                <a href="https://vk.com/kelvin_mirrors" class="social-btn vk"></a>
+                <a href="https://vk.com/kelvin_mirrors" class="social-btn insta"></a>
             </div>
         </div>
     </footer>
