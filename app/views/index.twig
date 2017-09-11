@@ -361,6 +361,11 @@
             <form action="#" method="post" class="call">
                 <input type="tel" id="phone" placeholder="Введите номер">
                 <button class="btn" type="submit">Перезвоните мне</button>
+                <select>
+                    <option> раз </option>
+                    <option> два </option>
+                    <option> три </option>
+                </select>
             </form>
         </div>
     </div>
@@ -378,6 +383,29 @@
             </div>
         </div>
     </footer>
+    <div class="modal-content">
+        <form action="vk.com" method="get">
+        <div class="modal-left">
+            <h3>Модель:</h3>
+            <label>
+                <input class="radio" type="radio" name="radio-test" value="1">
+                <span class="radio-custom"></span>
+                <span class="label">First</span>
+            </label>
+            <label>
+                <input class="radio" type="radio" name="radio-test" value="2">
+                <span class="radio-custom"></span>
+                <span class="label">Second</span>
+            </label>
+            <button type="submit">test</button>
+        </div>
+        <div class="modal-right">
+            <h3>Цвет:</h3>
+        </div>
+        <button class="modal-content-close" type="button">Закрыть</button>
+        </form>
+    </div>
+    <div class="modal-overlay"></div>
     <script src="js/scripts.js"></script>
 </body>
 </html>
