@@ -496,11 +496,11 @@ body {
 .modal-content {
   display: none;
   position: fixed;
-  top: 120px;
+  top: 70px;
   left: 50%;
   margin-left: -420px;
   width: 840px;
-  height: 730px;
+  height: 700px;
   color: #000;
   background: #fff;
   z-index: 30;
@@ -527,14 +527,60 @@ body {
   min-height: 730px;
   padding-top: 30px;
   padding-left: 30px;
-  outline: 1px solid #f00;
+}
+.modal-content .modal-left input.order {
+  margin: 0;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-family: HelveticaNeueThin;
+  font-weight: 100;
+  text-align: left;
+  background: rgba(255,255,255,0);
+}
+.modal-content .modal-left .btn {
+  padding: 0 50px;
+  color: #000;
+  border-color: #000;
+  font-family: Open Sans;
+  margin-bottom: 30px;
+  width: auto;
+}
+.modal-content .modal-left .btn:hover {
+  background: rgba(0,0,0,0.15);
 }
 .modal-content .modal-right {
+  position: relative;
   width: 360px;
   min-height: 730px;
   padding-top: 30px;
   padding-left: 30px;
-  outline: 1px solid #f00;
+}
+.modal-content .modal-right img {
+  position: absolute;
+  bottom: 280px;
+  left: 25px;
+}
+.modal-content .modal-right .sum {
+  position: absolute;
+  bottom: 155px;
+  left: -40px;
+  font-family: HelveticaNeueThin;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 42px;
+}
+.modal-content .modal-right .price {
+  position: absolute;
+  bottom: -50px;
+  left: -45px;
+  font-family: HelveticaNeueThin;
+  font-size: 100px;
+  font-weight: 100;
+  line-height: 140px;
 }
 .modal-content h3 {
   margin: 0;
@@ -1217,7 +1263,7 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
-.block-11 .call input {
+.block-11 #phone {
   margin: 0;
   padding: 5px;
   display: block;
@@ -1230,7 +1276,7 @@ body {
   font-family: HelveticaNeueThin;
   font-weight: 100;
   text-align: center;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0);
 }
 .block-11 .btn {
   color: #000;
