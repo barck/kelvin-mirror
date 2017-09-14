@@ -494,7 +494,7 @@ body {
   background: #151515;
 }
 .modal-content {
-  display: block;
+  display: none;
   position: fixed;
   top: 120px;
   left: 50%;

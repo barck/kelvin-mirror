@@ -36,8 +36,8 @@ $( "#arrow" ).click(function() {
 
 var phoneLink = document.querySelector('.phone-link')
 var recall = document.querySelector('.btn-to-a')
-var blurBlock = document.querySelector('.block-10')
-var footer = document.querySelector('.main-footer')
+var blurBlock = document.querySelector('.blur-container')
+var footer = document.querySelector('.blur-footer')
 
 
 phoneLink.addEventListener("click", function(event){
