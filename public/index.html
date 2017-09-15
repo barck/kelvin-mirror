@@ -133,10 +133,10 @@
                                 <li>3 цвета на выбор</li>
                                 <li>2 запасные лампы</li>
                             </ul>
-                            <span class="old-price">17990P</span>
-                            <span class="new-price">16890P</span>
+                            <span class="old-price">17990₽</span>
+                            <span class="new-price">16890₽</span>
                         </div>
-                        <button class="btn">Купить</button>
+                        <button class="btn buy1">Купить</button>
                     </div>
                 </div>
             </div>
@@ -155,10 +155,10 @@
                                 <li>1 запасная лампа</li>
                                 <li>крепеж на стену или подставка</li>
                             </ul>
-                            <span class="old-price">10200P</span>
-                            <span class="new-price">8990P</span>
+                            <span class="old-price">10200₽</span>
+                            <span class="new-price">8990₽</span>
                         </div>
-                        <button class="btn">Купить</button>
+                        <button class="btn buy2">Купить</button>
                     </div>
                 </div>
             </div>
@@ -177,10 +177,10 @@
                                 <li>1 запасная лампа</li>
                                 <li>крепеж на стену или подставка</li>
                             </ul>
-                            <span class="old-price">12990P</span>
-                            <span class="new-price">9800P</span>
+                            <span class="old-price">12990₽</span>
+                            <span class="new-price">9800₽</span>
                         </div>
-                        <button class="btn">Купить</button>
+                        <button class="btn buy3">Купить</button>
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@
                 <div class="container">
                     <div class="mirror-desc">
                         <div class="spec">
-                            <h2>Гримерный стол</h2>
+                            <h2>Гримерный&nbsp</h2><h2 class="upper">СТОЛ</h2>
                             <h3>Стол с квадратным гримерным
                                 зеркалом</h3>
                             <hr>
@@ -199,10 +199,31 @@
                                 <li>3 цвета на выбор</li>
                                 <li>1 запасная лампа</li>
                             </ul>
-                            <span class="old-price">14990P</span>
-                            <span class="new-price">13890P</span>
+                            <span class="old-price">14990₽</span>
+                            <span class="new-price">13890₽</span>
                         </div>
-                        <button class="btn">Купить</button>
+                        <button class="btn buy4">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mirror-5">
+                <div class="container">
+                    <div class="mirror-desc">
+                        <div class="spec">
+                            <h2>Световые&nbsp</h2><h2 class="upper">СТОЙКИ</h2>
+                            <h3>Световые стойки для макияжа</h3>
+                            <hr>
+                            <ul>
+                                <li>6 светодиодных ламп</li>
+                                <li>удобная кнопка вкл\выкл</li>
+                                <li>шнур питания 5м</li>
+                                <li>3 цвета на выбор</li>
+                                <li>1 запасная лампа</li>
+                            </ul>
+                            <span class="old-price">5990₽</span>
+                            <span class="new-price"> 3890₽</span>
+                        </div>
+                        <button class="btn buy5">Купить</button>
                     </div>
                 </div>
             </div>
@@ -382,38 +403,38 @@
         </div>
     </footer>
     <div class="modal-content">
-        <form action="vk.com" method="get">
+        <form action="vk.com" method="get" name="order" onsubmit="return validate_form ( );">
         <div class="modal-left">
             <h3>Модель:</h3>
-            <label>
-                <input class="radio" type="radio" name="model" value="gigant">
+            <label class="gigant-label">
+                <input class="radio gigant" type="radio" name="model" value="gigant" >
                 <span class="radio-custom"></span>
                 <span class="label">Зеркало <span class="bold">ГИГАНТ</span> 200х80см</span>
             </label>
-            <label>
-                <input class="radio" type="radio" name="model" value="kvadrat">
+            <label class="kvadrat-label">
+                <input class="radio kvadrat" type="radio" name="model" value="kvadrat">
                 <span class="radio-custom"></span>
                 <span class="label">Зеркало <span class="bold">КВАДРАТ</span> 200х80см</span>
             </label>
-            <label>
-                <input class="radio" type="radio" name="model" value="pryamougolnik">
+            <label class="pryamougolnik-label">
+                <input class="radio pryamougolnik" type="radio" name="model" value="pryamougolnik">
                 <span class="radio-custom"></span>
                 <span class="label">Зеркало <span class="bold">ПРЯМОУГОЛЬНИК</span> 200х80см</span>
             </label>
-            <label>
-                <input class="radio" type="radio" name="model" value="stol">
+            <label class="stol-label">
+                <input class="radio stol" type="radio" name="model" value="stol">
                 <span class="radio-custom"></span>
                 <span class="label">Гримерный <span class="bold">СТОЛ</span> 200х80см</span>
             </label>
-            <label>
-                <input class="radio" type="radio" name="model" value="stoyki">
+            <label class="stoyki-label">
+                <input class="radio stoyki" type="radio" name="model" value="stoyki">
                 <span class="radio-custom"></span>
                 <span class="label">Световые <span class="bold">СТОЙКИ</span> 200х80см</span>
             </label>
-            <input class="order" type="tel" id="phone" placeholder="Введите имя">
+            <input name="name" class="order" type="tel" id="phone" placeholder="Введите имя">
             <input class="order" type="tel" id="phone" placeholder="Введите номер">
-            <input class="order" type="tel" id="phone" placeholder="Введите emai">
-            <button type="submit" class="btn">Отправить</button>
+            <input class="order" type="tel" id="phone" placeholder="Введите email">
+            <button type="submit" class="btn" >Отправить</button>
         </div>
         <div class="modal-right">
             <h3>Цвет:</h3>
@@ -434,7 +455,7 @@
             </label>
             <img src="../img/logo-black.png" alt="">
             <p class="sum">сумма заказа:</p>
-            <p class="price">12990₽</p>
+            <p class="price">0₽</p>
         </div>
         <button class="modal-content-close" type="button">Закрыть</button>
         </form>
