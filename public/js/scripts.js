@@ -26,7 +26,25 @@ function validate_form ( )
 
     if ( document.order.name.value == "" )
     {
-        alert ( "Пожалуйста заполните поле 'Ваше имя'." );
+        popup.classList.add("shaking-block");
+        valid = false;
+    }
+    if ( document.order.number.value == "" )
+    {
+        popup.classList.add("shaking-block");
+        valid = false;
+    }
+    if ( document.order.email.value == "" )
+    {
+        popup.classList.add("shaking-block");
+        valid = false;
+    }
+
+    if ( ( document.order.model[0].checked == false ) && ( document.order.model[1].checked == false ) &&
+        ( document.order.model[2].checked == false ) && ( document.order.model[3].checked == false ) &&
+        ( document.order.model[4].checked == false ))
+    {
+        popup.classList.add("shaking-block");
         valid = false;
     }
 
