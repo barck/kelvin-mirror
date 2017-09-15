@@ -75,10 +75,14 @@ body
 		min-height 700px
 		background url("../img/mirror4.jpg") no-repeat center center
 		background-size cover
+	.mirror-5
+		min-height 700px
+		background url("../img/mirror5.jpg") no-repeat center center
+		background-size cover
 
 
 .block-5
-	min-height 890px
+	min-height 800px
 	background url("../img/hero_image_5.jpg") no-repeat center center
 	background-size cover
 
@@ -199,6 +203,7 @@ body
 			font-size 100px
 			font-weight 100
 			line-height 140px
+			text-align: left
 
 	h3
 		margin 0
@@ -213,6 +218,31 @@ body
 
 .modal-content-show
 	display block
+
+.shaking-block {/*:hover нужен для того, чтобы эффект работал при наведении*/
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;/*Вот эта строчка нужна для того, чтобы работало дрожание*/
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+}
+
+@keyframes shake {
+	10%, 90% {/*Здесь задано положение блока в 100 и 900 миллисекунду*/
+		transform: translate3d(-1px, 0, 0);  /*Здесь первое число - это отклонение по горизонтали, а второе - отклонение по вертикали.*/
+	}
+
+	20%, 80% {/*Здесь задано положение блока в 200 и 800 миллисекунду*/
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {/*Здесь задано положение блока в 300, 500 и 700 миллисекунду*/
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {/*Здесь задано положение блока в 400 и 600 миллисекунду*/
+		transform: translate3d(4px, 0, 0);
+	}
+}
+
 
 .modal-content-close
 	position absolute
@@ -479,7 +509,7 @@ body
 		font-weight 100
 		text-align center
 
-.mirror-1 div, .mirror-3 div
+.mirror-1 div, .mirror-3 div, .mirror-5 div
 	display flex
 	justify-content flex-end
 .mirror-2 div, .mirror-4 div
@@ -567,7 +597,7 @@ body
 		width 300px
 		color #fff
 		text-align center
-		margin-bottom 75px
+		margin-bottom 25px
 		h3
 			margin 0
 			padding 0
