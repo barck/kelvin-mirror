@@ -62,7 +62,9 @@ gulp.task('copy', function () {
     gulp.src('app/img/**')
         .pipe(gulp.dest('public/img'));
     gulp.src('app/style/fonts/**')
-    .pipe(gulp.dest('public/style/fonts'))
+        .pipe(gulp.dest('public/style/fonts'))
+    gulp.src('app/*.php')
+        .pipe(gulp.dest('public'))
 });
 
 
