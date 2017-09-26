@@ -1631,6 +1631,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header-menu .container img {
+  width: 116px;
+}
 .header-menu .container ul {
   margin: 0;
   padding: 0;
@@ -2534,6 +2537,9 @@ body {
 }
 .block-11 .btn:hover {
   background: rgba(0,0,0,0.15);
+}
+.main-footer img {
+  width: 116px;
 }
 .main-footer .container {
   display: flex;
