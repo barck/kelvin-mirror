@@ -1500,6 +1500,7 @@ body {
   }
 }
 .modal-content .modal-right img {
+  width: 300px;
   position: absolute;
   bottom: 280px;
   left: 25px;
