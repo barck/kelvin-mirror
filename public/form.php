@@ -1,3 +1,8 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
 <?
 # получаем данные и отсекаем пробельные символы в начале и конце:
 $model = @ trim ($_POST['model']);
@@ -12,3 +17,5 @@ mail ("artiv09@gmail.com",
     "Сообщение с сайта kelvin-mirrors",
     "$model \n\n $color \n\n $name \n\n $tel \n\n $email \n\n ");
 ?>
+</body>
+</html>

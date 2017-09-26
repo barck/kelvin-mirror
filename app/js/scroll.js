@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#scroll").on("click","a", "button", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
+        // event.preventDefault();    //раскомментировать, если будет лагать скролл
 
         //забираем идентификатор бока с атрибута href
         var id  = $(this).attr('href'),
@@ -14,17 +14,6 @@ $(document).ready(function(){
     });
 });
 
-
-//прячем стрелку в первом блоке по клику
-// var arrowLink = document.querySelector('.arrow')
-// arrowLink.addEventListener("click", function(event){
-//
-//     function Hide () {
-//         arrowLink.classList.add("hidden");
-//     }
-//     setTimeout(Hide, 1500);
-//
-// });
 
 $( "#arrow" ).click(function() {
     $( "#arrow" ).fadeOut( 1500, function() {
