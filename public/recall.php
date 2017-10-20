@@ -19,6 +19,8 @@
     <div class="header-menu" >
         <div class="container">
             <a href="#index"><img src="img/logo.png" alt=""></a>
+            <ul>
+            </ul>
             <div class="phone-block">
                 <a href="tel:+79630759960" class="phone">+7 (963) 075-99-60</a>
 
@@ -30,13 +32,9 @@
     <div class="container">
         <div>
             <h2><?php
-                $model = $_POST['model'];
-                $color = $_POST['color'];
-                $name = $_POST['name'];
-                $tel = $_POST['number'];
-                $email = $_POST['email'];
+                $tel = $_POST['number2'];
                 # отправка данных на мыло админу
-                if (mail("artiv09@gmail.com", "Заказ с сайта", "Модель:".$model. "\nЦвет:". $color . "\nИмя:".$name . "\nТелефон:". $tel ."\nEmail:". $email ,"From: admin@kelvin-mirrors.com \r\n"))
+                if (mail("artiv09@gmail.com", "Заказ с сайта", "\nТелефон-перезвонить!:". $tel ,"From: admin@kelvin-mirrors.com \r\n"))
                 {
                     echo "Заявка успешно отправлена, скоро с вами свяжутся!";
                 } else {
