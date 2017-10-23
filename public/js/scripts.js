@@ -19,6 +19,7 @@ let kvadratLabel = document.querySelector(".kvadrat-label")
 let pryamougolnikLabel = document.querySelector(".pryamougolnik-label")
 let stolLabel = document.querySelector(".stol-label")
 let stoykiLabel = document.querySelector(".stoyki-label")
+let body = document.querySelector("#scroll")
 
 function validate_form ( )
 {
@@ -56,6 +57,7 @@ link.addEventListener("click", function(event){
     event.preventDefault();
     popup.classList.add("modal-content-show");
     overlay.classList.add("modal-overlay-show");
+    body.classList.add("no-scroll");
 
     gigantRadio.addEventListener("click", function(event){
         price.innerHTML = "16890₽";
@@ -78,6 +80,7 @@ link.addEventListener("click", function(event){
 
 buy1.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.add("no-scroll");
     price.innerHTML = "16890₽";
     popup.classList.add("modal-content-show");
     gigantRadio.checked = "false";
@@ -101,6 +104,7 @@ buy1.addEventListener("click", function(event){
 
 buy2.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.add("no-scroll");
     price.innerHTML = "8990₽";
     popup.classList.add("modal-content-show");
     kvadrat.checked = "false";
@@ -125,6 +129,7 @@ buy2.addEventListener("click", function(event){
 
 buy3.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.add("no-scroll");
     price.innerHTML = "9800₽";
     popup.classList.add("modal-content-show");
     pryamougolnikRadio.checked = "false";
@@ -149,6 +154,7 @@ buy3.addEventListener("click", function(event){
 
 buy4.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.add("no-scroll");
     price.innerHTML = "13890₽";
     popup.classList.add("modal-content-show");
     stolRadio.checked = "false";
@@ -172,6 +178,7 @@ buy4.addEventListener("click", function(event){
 
 buy5.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.add("no-scroll");
     price.innerHTML = "3890₽";
     popup.classList.add("modal-content-show");
     stoykiRadio.checked = "false";
@@ -196,18 +203,21 @@ buy5.addEventListener("click", function(event){
 
 link2.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.add("no-scroll");
     popup.classList.add("modal-content-show");
     overlay.classList.add("modal-overlay-show");
 });
 
 overlay.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.remove("no-scroll");
     popup.classList.remove("modal-content-show");
     overlay.classList.remove("modal-overlay-show");
 });
 
 close.addEventListener("click", function(event){
     event.preventDefault();
+    body.classList.remove("no-scroll");
     popup.classList.remove("modal-content-show");
     overlay.classList.remove("modal-overlay-show");
 });

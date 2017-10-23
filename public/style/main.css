@@ -1253,6 +1253,9 @@ body {
     width: auto;
   }
 }
+.no-scroll {
+  overflow-y: hidden;
+}
 .flex-wrapper {
   display: flex;
   justify-content: space-between;
