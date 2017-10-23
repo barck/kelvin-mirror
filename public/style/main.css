@@ -2619,6 +2619,16 @@ body {
 .main-footer .insta {
   background-position: 7px -59px;
 }
+#vk_groups {
+  position: fixed;
+  bottom: 0;
+  left: 1%;
+}
+@media (max-width: 765px) {
+  #vk_groups {
+    display: none;
+  }
+}
 @-moz-keyframes shake {
   10%, 90% {
 /*Здесь задано положение блока в 100 и 900 миллисекунду*/
